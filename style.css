@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --background: #fefae0;
+  --text-color: #363032;
+  --primary-color: #8a5a44;
+  --secondary-color: #606c38;
+  --accent-color: #c99688;
+  --icon-bg:#f5e6e0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url('assets/bg-ivi-arts.png') center center no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(221, 217, 217, 0.7);
+  z-index: -1;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 24px;
+  margin: 1rem 0;
+}
+
+.navbar-list li a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbar-list li a:hover {
+  background: var(--secondary-color);
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 6em;
+  font-weight: 600;
+  padding: 24px;
+  text-align: center;
+}
+
+.root > p {
+  color: var(--primary-color);
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 0 24px;
+  text-align: center;
+  }
+
+#about {
+  background-color: var(--background);
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-header h2 {
+  color: var(--text-color);
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  color: var(--text-color);
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-about {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 05);
+  padding: 2.5rem 2rem;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-about img {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background-color: var(--icon-bg);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
+}
+
+.card-about h3 {
+  color: var(--text-color);
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-about p {
+  color: var(--text-color);
+  font-size: 0.95em;
+  line-height: 1.6;
+  padding: 0;
+  opacity: 0.8;
+}
+
+#products {
+  background-color: var(--background);
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.handmade-products {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.handmade-products h2 {
+  color: var(--text-color);
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.handmade-products p {
+  color: var(--text-color);
+  font-size: 1.1em;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.card-product {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #f9f9f9;
+}
+
+.card-product h3 {
+  color: var(--text-color);
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 1.5rem 1.5rem 0.8rem 1.5rem;
+}
+
+.card-product p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+footer {
+  background-color: #fff;
+  color: var(--text-color);
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  font-size: 0.95em;
+}
+
