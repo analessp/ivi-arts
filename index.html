@@ -8,16 +8,17 @@
   <title>Ivi Arts - Artesanato Personalizado</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <div class="root">
       <div class="overlay"></div>
     <h1>Ivi Arts</h1>
-    <p>Arte que respira o vento e o fogo</p>
+    <p>Onde o artesanal encontra o essencial</p>
 <nav>
 <ul class="navbar-list">
   <li><a href="#products" class="catalog">Ver Produtos</a></li>
-  <li><a href="#" class="personalize">Criar Arte Personalizada</a></li>
+  <li><a href="#custom-art" class="personalize">Criar Arte Personalizada</a></li>
   </ul>
   </nav>
   </div>  
@@ -51,22 +52,86 @@
     </div>
     <div class="products-container">
       <div class="card-product">
-        <img src="assets/ecobags.jpg" alt="Imagem ilustrativa de ecobags.">
+        <img src="assets/ecobags.jpg" alt="Imagem ilustrativa de ecobag.">
         <h3>Ecobags</h3>
         <p>Sacolas sustentáveis com designs únicos e criativos</p>
       </div>
       <div class="card-product">
-        <img src="assets/censer.jpg" alt="Imagem ilustrativa de cinzeiros.">
+        <img src="assets/ashtray.jpg" alt="Imagem ilustrativa de cinzeiro.">
         <h3>Cinzeiros</h3>
         <p>Peças artesanais em cerâmica com acabamento especial</p>
       </div>
       <div class="card-product">
-        <img src="assets/ashtray.jpg" alt="Imagem ilustrativa de incesários.">
+        <img src="assets/censer.jpg" alt="Imagem ilustrativa de incesário.">
         <h3>Incensários</h3>
         <p>Porta-incensos decorativos feitos à mão</p>
       </div>
+      <div class="card-product">
+        <img src="assets/mirror.jpg" alt="Imagem ilustrativa de espelho.">
+        <h3>Espelhos</h3>
+        <p>Espelhos artesanais e únicos</p>
+      </div>
     </div>
   </section>
+  <section id="custom-art">
+    <div class="custom-art-header">
+    <h2>Arte Personalizada</h2>
+    <p>Tem uma ideia especial? Compartilhe conosco e vamos criar algo único para você!</p>
+    </div>
+    <form class="custom-form" action="https://formspree.io/f/xdkprrjq" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="🎨 Nova solicitação de arte - Ivi Arts">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="#">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="file">Anexar Imagem (opcional)</label>
+        <div class="file-input-wrapper">
+          <input type="file" id="file" name="attachment" accept="image/*" class="file-input">
+          <label for="file" class="file-label">
+          <span class="file-text">Escolher Arquivo</span>
+        </label>
+        <span class="file-name">Nenhum arquivo escolhido</span>
+      </div>
+      </div>
+      <div class="form-group">
+        <label for="idea">Descreva sua ideia</label>
+        <textarea id="idea" name="idea" rows="6" placeholder="Conte-nos sobre sua ideia de arte personalizada..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Enviar Ideia
+      </button>
+    </form>
+  </section>
+  <section id="contacts">
+  <div class="container-social-links">
+    <h2>Entre em Contato</h2>
+    <p>Fale conosco através das nossas redes sociais</p>
+  </div>
+    <ul class="social-links">
+      <li> 
+        <a href="https://wa.me/5585989395966" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>WhatsApp</h3>
+            <p>Fale conosco diretamente pelo WhatsApp</p>
+          </a>
+    </li>
+    <li> 
+        <a href="https://www.instagram.com/ivizz.l/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>Instagram</h3>
+            <p>Acompanhe nosso Instagram</p>
+          </a>
+        </li>
+    </ul>
+  </section>
 <footer>© 2025 Ivi Arts. Todos os direitos reservados.</footer>
+<script src="script.js"></script>
 </body>
 </html>
