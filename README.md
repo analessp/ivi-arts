@@ -1,10 +1,10 @@
-#Ivi Arts
+# Ivi Arts
 
 > Onde o artesanal encontra o essencial
 
 
 
-##🧶 Sobre
+## 🧶 Sobre
 
 - Ivi Arts é um site de artesanato personalizado que transforma ideias em obras de arte feitas à mão — cada peça conta uma história única. No site, o usuário pode:
 
@@ -15,7 +15,7 @@
 - Entrar em contato pelas redes sociais ou WhatsApp.
 
 
-##📦 Funcionalidades principais
+## 📦 Funcionalidades principais
 
 - Página de apresentação da marca e dos valores: cuidado artesanal, autenticidade, personalização.
 
@@ -28,7 +28,7 @@
 - Layout limpo, minimalista, voltado para a arte visual e para a usabilidade.
 
 
-##🛠 Tecnologias utilizadas
+## 🛠 Tecnologias utilizadas
 
 
 - HTML5 + CSS3 para estrutura e estilo.
@@ -40,7 +40,7 @@
 - Ferramentas de versionamento: Git/GitHub.
 
 
-##🚀 Como rodar localmente
+## 🚀 Como rodar localmente
 
 1. Clone o repositório:
 
@@ -70,7 +70,7 @@ yarn dev
 
 
 
-##🎨 Design e identidade
+## 🎨 Design e identidade
 
 - A comunicação reforça: feito com cuidado, produtos únicos, personalização.
 
